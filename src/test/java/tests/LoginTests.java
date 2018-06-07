@@ -14,7 +14,7 @@ public class LoginTests extends BaseTest {
     String wrongPassword = "11122233444";
 
     @Test (priority = 0, description="Invalid Login Scenario with wrong username and password.")
-    public void invalidLoginTest_InvalidUserNameInvalidPassword (Method method) throws InterruptedException {
+    public void invalidLoginTest_InvalidUserNameInvalidPassword ()  {
 
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
@@ -35,7 +35,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test (priority = 1, description="Invalid Login Scenario with empty username and password.")
-    public void invalidLoginTest_EmptyUserEmptyPassword () throws InterruptedException {
+    public void invalidLoginTest_EmptyUserEmptyPassword ()  {
 
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
